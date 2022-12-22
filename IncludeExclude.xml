@@ -3,10 +3,10 @@
 	<test name="MyFirstTest">
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			<class name="testCases.ManageProductTestCases">
+			<class name="testCases.LoginTestCases">
 				<methods>
 					<!-- if we want to exclude use exclude tag-->
-					<include name="validateUploadedFileIsPreviewDisplayed"></include>
+					<include name="excelRead"></include>
 				</methods>
 			</class>
 		</classes>

@@ -1,5 +1,7 @@
 package testCases;
 
+import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -10,6 +12,7 @@ import elementRepository.LoginPage;
 public class LoginTestCases extends BaseClass{
 
 	LoginPage lp;
+	List<String> loginList;
 
 	@Test(priority=1, description="Validating the profile name of logged user")
 	public void loggedInProfileNameValidation() {
@@ -51,6 +54,14 @@ public class LoginTestCases extends BaseClass{
 		Assert.assertEquals(actualStatus, expectedStatus,Constant.CHECKBOX_ERROR);
 	}
 
+	@Test
+	public void excelRead() {
+		lp = new LoginPage(driver);
+		loginList = lp.getLoginDetails();
+		System.out.println(loginList);
+		lp.excelSteps(loginList.get(0), loginList.get(1));
+	}
+
 	@DataProvider(name = "data")
 	public Object [][] getuserData(){
 		return new Object[][] {
@@ -60,7 +71,6 @@ public class LoginTestCases extends BaseClass{
 			{"admin1", "admin2"},
 		};
 	}
-
 
 }
 

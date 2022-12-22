@@ -4,13 +4,13 @@
   <test thread-count="5" name="MyFirstTest(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="testCases.ManageProductTestCases">
+      <class name="testCases.LoginTestCases">
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="validateUploadedFileIsPreviewDisplayed"/>
+          <include name="excelRead"/>
         </methods>
-      </class> <!-- testCases.ManageProductTestCases -->
+      </class> <!-- testCases.LoginTestCases -->
     </classes>
   </test> <!-- MyFirstTest(failed) -->
 </suite> <!-- Failed suite [TestRunnerSuite] -->

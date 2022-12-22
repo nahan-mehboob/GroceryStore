@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyFirstSuite]">
+  <test thread-count="5" name="MyTestSuite(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <groups>
+      <run>
+        <exclude name="SmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.LoginTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="loggedInProfileNameValidationUsingDataProvider" invocation-numbers="1 2 3"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.LoginTestCases -->
+      <class name="testCases.ManageOrdersTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="validateDeletionOfProductOrder"/>
+        </methods>
+      </class> <!-- testCases.ManageOrdersTestCases -->
+    </classes>
+  </test> <!-- MyTestSuite(failed) -->
+</suite> <!-- Failed suite [MyFirstSuite] -->

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-22T11:39:51 IST" name="TestRunnerSuite" finished-at="2022-12-22T11:40:05 IST" duration-ms="13882">
+    <groups>
+    </groups>
+    <test started-at="2022-12-22T11:39:51 IST" name="MyFirstTest" finished-at="2022-12-22T11:40:05 IST" duration-ms="13882">
+      <class name="testCases.ManageProductTestCases">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageProductTestCases@595b007d]" started-at="2022-12-22T11:39:51 IST" name="beforeMethod" finished-at="2022-12-22T11:39:56 IST" duration-ms="5659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@595b007d]" started-at="2022-12-22T11:39:56 IST" name="validateUploadedFileIsPreviewDisplayed" description="Validating whether the uploaded file is previewed" finished-at="2022-12-22T11:40:04 IST" duration-ms="7849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUploadedFileIsPreviewDisplayed -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@595b007d]" started-at="2022-12-22T11:40:04 IST" name="afterMethod" finished-at="2022-12-22T11:40:05 IST" duration-ms="321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUploadedFileIsPreviewDisplayed status=SUCCESS method=ManageProductTestCases.validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@595b007d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.ManageProductTestCases -->
+    </test> <!-- MyFirstTest -->
+  </suite> <!-- TestRunnerSuite -->
+</testng-results>

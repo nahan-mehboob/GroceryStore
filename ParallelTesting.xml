@@ -1,0 +1,8 @@
+<suite name="Parallel Testing Suite">
+	<test name="My First Test" parallel="Methods" thread-count="2">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="testCases.PushNotificationsTestCases" />
+		</classes>
+	</test>
+</suite>

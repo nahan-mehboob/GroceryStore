@@ -77,7 +77,7 @@ public class LoginPage {
 		gu.sendText(password, password1);
 		gu.clickOnElement(signin);
 	}
-	
+
 	public void presteps() {
 		getUserName("admin");
 		getPassword("admin");

@@ -3,7 +3,6 @@
 	<groupId>GroceryStore</groupId>
 	<artifactId>GroceryStore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<dependencies>
 
 		<dependency>
@@ -12,7 +11,6 @@
 			<version>4.4.0</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -20,20 +18,17 @@
 			<scope>test</scope>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>5.2.2</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.2.2</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>com.aventstack</groupId>

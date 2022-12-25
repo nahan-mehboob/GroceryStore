@@ -58,8 +58,10 @@ public class LoginTestCases extends BaseClass{
 	public void excelRead() {
 		lp = new LoginPage(driver);
 		loginList = lp.getLoginDetails();
-		System.out.println(loginList);
 		lp.excelSteps(loginList.get(0), loginList.get(1));
+		String expectedProfileName = Constant.EXPECTED_PROFILE_NAME;
+		String actualProfileName = lp.profileNameVerification();
+		Assert.assertEquals(actualProfileName, expectedProfileName,Constant.LOGIN_ERROR);
 	}
 
 	@DataProvider(name = "data")

@@ -31,7 +31,7 @@ public class ManageOrdersTestCases extends BaseClass {
 		Boolean actualText = mo.verifyPaymentModeIsBank();
 		Assert.assertTrue(actualText,Constant.PAYMENT_MODE_ERROR);
 	}
-
+	
 	@Test(priority = 1, description = "Validating size of the status dropdown")
 	public void validateSizeOfStatusDropdown() {
 		lp = new LoginPage(driver);

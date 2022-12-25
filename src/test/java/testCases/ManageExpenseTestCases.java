@@ -13,15 +13,29 @@ public class ManageExpenseTestCases extends BaseClass{
 	LoginPage lp;
 	ManageExpense me;
 
-	@Test(priority = 1, description = "validating whether product title is updated")
-	public void validatingTheProductTitleIsUpdated() throws InterruptedException {
+	@Test(priority = 1, description = "Validating whether product title already exists")
+	public void validatingTheProductTitleAlreadyExists() throws InterruptedException {
 		lp = new LoginPage(driver);
 		lp.presteps();
 		me = new ManageExpense(driver);
-		String actualPrdName = me.verifyingTheProductTitleIsUpdated();
+		String actualAlert = me.verifyTheProductTitleAlreadyExists();
 		SoftAssert softAssert = new SoftAssert();
-		String expectedPrdName = Constant.EXPECTED_PRD_TITLE_NAME;
-		softAssert.assertEquals(actualPrdName, expectedPrdName,Constant.TITLE_UPDATE_STATUS);
+		String expectedAlert = Constant.EXPECTED_NEW_TITLE_ALERT;
+		softAssert.assertEquals(actualAlert, expectedAlert,Constant.ALERT_MSG_ERROR);
 		softAssert.assertAll();
 	}
+	
+	@Test(priority = 2, description = "Validating the title of third product")
+	public void validatingTheProductTitleName() throws InterruptedException {
+		lp = new LoginPage(driver);
+		lp.presteps();
+		me = new ManageExpense(driver);
+		String actualTitleName = me.verifyTheProductTitleName();
+		SoftAssert softAssert = new SoftAssert();
+		String expectedTitleName = Constant.EXPECTED_PRD_TITLE_NAME;
+		softAssert.assertEquals(actualTitleName, expectedTitleName,Constant.TITLE_ERROR);
+		softAssert.assertAll();
+	}
+	
+	
 }

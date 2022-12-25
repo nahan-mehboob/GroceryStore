@@ -23,7 +23,7 @@ public class LoginTestCases extends BaseClass{
 		Assert.assertEquals(actualProfileName, expectedProfileName,Constant.LOGIN_ERROR);
 	}
 
-	@Test(priority = 2, description="login using data provider", dataProvider = "data")
+	@Test(priority = 2, description="Login using data provider", dataProvider = "data")
 	public void loggedInProfileNameValidationUsingDataProvider(String username, String password) {
 		lp = new LoginPage(driver);
 		//lp.presteps();
@@ -54,7 +54,7 @@ public class LoginTestCases extends BaseClass{
 		Assert.assertEquals(actualStatus, expectedStatus,Constant.CHECKBOX_ERROR);
 	}
 
-	@Test
+	@Test(priority=5, description="Login using excel read")
 	public void excelRead() {
 		lp = new LoginPage(driver);
 		loginList = lp.getLoginDetails();

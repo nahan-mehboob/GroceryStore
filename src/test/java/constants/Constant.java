@@ -30,9 +30,9 @@ public class Constant {
 	public static final String ALERT_MSG_ERROR = "Alert message is not as expected";
 	public static final String EXPECTED_ALERT_BGCLR = "rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 
-	public static final String EXPECTED_PRD_TITLE_NAME= "SpicesOrg9937";
-	public static final String TITLE_UPDATE_STATUS= "Title is successfully updated";
-
+	public static final String EXPECTED_NEW_TITLE_ALERT= "×\n"+ "Alert!\n"+ "Category already exists.";
+	public static final String EXPECTED_PRD_TITLE_NAME="SpicesOrg993";
+	
 	public static final String LOGIN_PAGE_URL = "https://groceryapp.uniqassosiates.com/admin/login";
 	public static final String URL_ERROR = "Invalid URL";
 
@@ -44,10 +44,10 @@ public class Constant {
 	public static final String LIST_SIZE_ERROR = "Size of the list is not as expected";
 	public static final String EXPECTED_ORDER_ID = "361";
 
-
 	public static final String RADIO_BTN_ERROR = "The button is not selected";
 	public static final String EXPECTED_SAVEBTN_COLOR = "rgba(255, 255, 255, 1)";
 
+	public static final String EXPECTED_STATE_NAME = "Belfast";
 
 
 }

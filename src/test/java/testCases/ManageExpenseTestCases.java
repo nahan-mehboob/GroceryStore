@@ -21,10 +21,10 @@ public class ManageExpenseTestCases extends BaseClass{
 		String actualAlert = me.verifyTheProductTitleAlreadyExists();
 		SoftAssert softAssert = new SoftAssert();
 		String expectedAlert = Constant.EXPECTED_NEW_TITLE_ALERT;
-		softAssert.assertEquals(actualAlert, expectedAlert,Constant.ALERT_MSG_ERROR);
+		softAssert.assertNotEquals(actualAlert, expectedAlert,Constant.ALERT_MSG_ERROR);
 		softAssert.assertAll();
 	}
-	
+
 	@Test(priority = 2, description = "Validating the title of third product")
 	public void validatingTheProductTitleName() throws InterruptedException {
 		lp = new LoginPage(driver);
@@ -36,6 +36,6 @@ public class ManageExpenseTestCases extends BaseClass{
 		softAssert.assertEquals(actualTitleName, expectedTitleName,Constant.TITLE_ERROR);
 		softAssert.assertAll();
 	}
-	
-	
+
+
 }

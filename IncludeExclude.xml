@@ -6,7 +6,7 @@
 			<class name="testCases.ManageExpenseTestCases">
 				<methods>
 					<!-- if we want to exclude use exclude tag-->
-					<include name="validatingTheProductTitleName"></include>
+					<include name="validatingTheProductTitleAlreadyExists"></include>
 				</methods>
 			</class>
 		</classes>

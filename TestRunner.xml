@@ -11,8 +11,9 @@
 			<class name="testCases.ManageExpenseTestCases"/> 
 			<class name="testCases.SettingsPageTestCases"/> 
 			<class name="testCases.ManageOrdersTestCases"/> 
-			<class name="testCases.ManageProductTestCases" /> -->
-			<class name="testCases.ManageLocationTestCases" /> 
+			<class name="testCases.ManageProductTestCases" /> 
+			<class name="testCases.ManageLocationTestCases" /> -->
+			<class name="testCases.AdminUsersTestCases" />
 		</classes>
 	</test>
 </suite>

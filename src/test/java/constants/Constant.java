@@ -30,9 +30,9 @@ public class Constant {
 	public static final String ALERT_MSG_ERROR = "Alert message is not as expected";
 	public static final String EXPECTED_ALERT_BGCLR = "rgb(40, 167, 69) none repeat scroll 0% 0% / auto padding-box border-box";
 
-	public static final String EXPECTED_NEW_TITLE_ALERT= "×\n"+ "Alert!\n"+ "Category already exists.";
+	public static final String EXPECTED_NEW_TITLE_ALERT= "×\n"+ "Alert!\n"+ "Expense Category Created Successfully";
 	public static final String EXPECTED_PRD_TITLE_NAME="SpicesOrg993";
-	
+
 	public static final String LOGIN_PAGE_URL = "https://groceryapp.uniqassosiates.com/admin/login";
 	public static final String URL_ERROR = "Invalid URL";
 
@@ -49,6 +49,7 @@ public class Constant {
 
 	public static final String EXPECTED_STATE_NAME = "Belfast";
 
+	public static final String EXPECTED_USER_ADMIN_ALERT ="×\n"+ "Alert!\n"+ "User Created Successfully";
 
 }
 

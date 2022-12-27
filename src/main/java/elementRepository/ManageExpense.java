@@ -23,22 +23,25 @@ public class ManageExpense {
 
 	@FindBy(xpath = "//p[contains(text(),'Expense Category')]")
 	WebElement expenseCategory;
-	
+
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
 	WebElement newBtn;
-	
+
 	@FindBy(xpath = "//input[@id='name']")
 	WebElement newTitleInputBox;
-	
+
 	@FindBy(xpath = "(//button[@class='btn btn-block-sm btn-danger'])[2]")
 	WebElement saveBtn;
 
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
-	WebElement newTitleAlert;
-	
+	WebElement newTitleFailAlert;
+
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement newTitleSuccessAlert;
+
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[3]")
 	WebElement thirdPrdTitle;
-	
+
 	public String verifyTheProductTitleAlreadyExists() throws InterruptedException {
 		gu.clickOnElement(manageExpense);
 		gu.mediumDelay(4000);
@@ -50,9 +53,9 @@ public class ManageExpense {
 		gu.clearInputField(newTitleInputBox);
 		gu.sendText(newTitleInputBox, "SpicesOrg9937");
 		gu.clickOnElement(saveBtn);
-		return gu.getElementText(newTitleAlert);
+		return gu.getElementText(newTitleFailAlert);
 	}
-	
+
 	public String verifyTheProductTitleName() {
 		gu.clickOnElement(manageExpense);
 		gu.keyDownAction(driver, Keys.TAB);
@@ -60,7 +63,6 @@ public class ManageExpense {
 		gu.keyDownAction(driver, Keys.ENTER);
 		gu.keyUpAction(driver, Keys.ENTER);
 		return gu.getElementText(thirdPrdTitle);
-		
 	}
 
 

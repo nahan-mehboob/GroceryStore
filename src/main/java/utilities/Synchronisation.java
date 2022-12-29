@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.checkerframework.checker.nullness.qual.Nullable;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -44,6 +45,13 @@ public class Synchronisation {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		//waits for the element to be selected
 		wait.until(ExpectedConditions.elementSelectionStateToBe(element,true));
+	}
+	
+	public void fluentWait(WebDriver driver) {
+		Wait<WebDriver>wait = new FluentWait<WebDriver>(driver)
+				.withTimeout(Duration.ofSeconds(10))
+				.pollingEvery(Duration.ofSeconds(2))
+				.ignoring(NoSuchElementException.class);
 	}
 
 }

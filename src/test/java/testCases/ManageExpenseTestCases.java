@@ -25,17 +25,6 @@ public class ManageExpenseTestCases extends BaseClass{
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 2, description = "Validating the title of third product")
-	public void validatingTheProductTitleName() throws InterruptedException {
-		lp = new LoginPage(driver);
-		lp.presteps();
-		me = new ManageExpense(driver);
-		String actualTitleName = me.verifyTheProductTitleName();
-		SoftAssert softAssert = new SoftAssert();
-		String expectedTitleName = Constant.EXPECTED_PRD_TITLE_NAME;
-		softAssert.assertEquals(actualTitleName, expectedTitleName,Constant.TITLE_ERROR);
-		softAssert.assertAll();
-	}
-
+	
 
 }

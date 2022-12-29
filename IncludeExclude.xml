@@ -3,10 +3,10 @@
 	<test name="MyFirstTest">
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			<class name="testCases.ManageExpenseTestCases">
+			<class name="testCases.ManageOrdersTestCases">
 				<methods>
 					<!-- if we want to exclude use exclude tag-->
-					<include name="validatingTheProductTitleAlreadyExists"></include>
+					<include name="validateOrderIdAndPaymentMode"></include>
 				</methods>
 			</class>
 		</classes>

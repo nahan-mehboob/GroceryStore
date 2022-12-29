@@ -56,14 +56,7 @@ public class ManageExpense {
 		return gu.getElementText(newTitleFailAlert);
 	}
 
-	public String verifyTheProductTitleName() {
-		gu.clickOnElement(manageExpense);
-		gu.keyDownAction(driver, Keys.TAB);
-		gu.keyUpAction(driver, Keys.TAB);
-		gu.keyDownAction(driver, Keys.ENTER);
-		gu.keyUpAction(driver, Keys.ENTER);
-		return gu.getElementText(thirdPrdTitle);
-	}
+	
 
 
 }

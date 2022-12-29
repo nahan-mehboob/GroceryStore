@@ -87,7 +87,7 @@ public class ExtentReportUtility  implements ITestListener {
 	}
 
 	public void onFinish(ITestContext context) {
-		reports.flush();
+		reports.flush(); //refreshes on its own
 	}
 
 }

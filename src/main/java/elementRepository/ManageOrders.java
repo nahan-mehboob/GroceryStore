@@ -101,11 +101,13 @@ public class ManageOrders {
 		return gu.getElementText(orderId_Result);
 	}
 
-	public String verifyPaymentMethod() {
+	public String verifyPaymentMethod() throws InterruptedException {
 		basicClick();
 		gu.clearInputField(orderIdInputBox);
 		gu.sendText(orderIdInputBox, "361");
 		gu.cilckOnElementByJavaScript(driver, searchBtn_SearchListOrders);
+		gu.mediumDelay(2000);
+		gu.moveToTheElement(driver, cod_Result);
 		return gu.getElementText(cod_Result);
 	}
 

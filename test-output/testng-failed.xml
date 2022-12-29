@@ -7,6 +7,13 @@
   <test thread-count="5" name="My Test(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
+      <class name="testCases.ManageOrdersTestCases">
+        <methods>
+          <include name="validateOrderIdAndPaymentMode"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageOrdersTestCases -->
       <class name="testCases.ManageProductTestCases">
         <methods>
           <include name="afterMethod"/>
@@ -14,6 +21,20 @@
           <include name="validateUploadedFileIsPreviewDisplayed"/>
         </methods>
       </class> <!-- testCases.ManageProductTestCases -->
+      <class name="testCases.LoginTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="loggedInProfileNameValidationUsingDataProvider" invocation-numbers="1 2 3"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.LoginTestCases -->
+      <class name="testCases.ManageLocationTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="validateCountOfActiveStatus"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageLocationTestCases -->
     </classes>
   </test> <!-- My Test(failed) -->
 </suite> <!-- Failed suite [My Extent Report Suite] -->

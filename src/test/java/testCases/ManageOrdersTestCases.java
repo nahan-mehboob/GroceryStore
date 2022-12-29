@@ -42,16 +42,16 @@ public class ManageOrdersTestCases extends BaseClass {
 	}
 
 	@Test(priority = 3, description = "Validating the text of given order id and its payment mode")
-	public void validateOrderIdAndPaymentMode() {
+	public void validateOrderIdAndPaymentMode() throws InterruptedException {
 		lp = new LoginPage(driver);
 		lp.presteps();
 		mo = new ManageOrders(driver);
+		SoftAssert softAssert  = new SoftAssert();
 		String actualOrderId = mo.verifyOrderId();
 		String expectedOrderId = Constant.EXPECTED_ORDER_ID;
+		softAssert.assertEquals(actualOrderId, expectedOrderId,Constant.WRONG_TEXT_ERROR);
 		String actualMethod = mo.verifyPaymentMethod();
 		String expectedMethod = Constant.EXPECTED_PAYMENT_MODE;
-		SoftAssert softAssert  = new SoftAssert();
-		softAssert.assertEquals(actualOrderId, expectedOrderId,Constant.WRONG_TEXT_ERROR);
 		softAssert.assertEquals(actualMethod, expectedMethod, Constant.WRONG_TEXT_ERROR);
 		softAssert.assertAll();
 	}

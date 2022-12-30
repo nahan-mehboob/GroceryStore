@@ -15,7 +15,7 @@ public class ManageProductTestCases extends BaseClass{
 	LoginPage lp;
 	ManageProduct mp;
 
-	@Test(priority =1, description = "Validating whether veg is selected by default")
+	@Test(priority =1, description = "Validating whether veg is selected by default", enabled = false)
 	public void validateVegIsSelectedByDefault() {
 		lp = new LoginPage(driver);
 		lp.presteps();
@@ -24,7 +24,7 @@ public class ManageProductTestCases extends BaseClass{
 		Assert.assertTrue(actualStatus, Constant.RADIO_BTN_ERROR);
 	}
 
-	@Test(priority =2, description = "Validating whether yes button is selected by default for stock")
+	@Test(priority =2, description = "Validating whether yes button is selected by default for stock",enabled = false)
 	public void validateStockIsYesByDefault() {
 		lp = new LoginPage(driver);
 		lp.presteps();
@@ -33,7 +33,7 @@ public class ManageProductTestCases extends BaseClass{
 		Assert.assertTrue(actualStatus, Constant.RADIO_BTN_ERROR);
 	}
 
-	@Test(priority =3, description = "Validating the font color of save button")
+	@Test(priority =3, description = "Validating the font color of save button", enabled = false)
 	public void validateStylePropertyOfSaveButton() {
 		lp = new LoginPage(driver);
 		lp.presteps();
@@ -43,7 +43,7 @@ public class ManageProductTestCases extends BaseClass{
 		Assert.assertEquals(actualColor, expectedColor, Constant.STYLE_ERROR);
 	}
 
-	@Test(priority =4, description = "Validating whether the uploaded file is previewed")
+	@Test(priority =4, description = "Validating whether the uploaded file is previewed", retryAnalyzer = retryTest.RetryAnalyzer.class)
 	public void validateUploadedFileIsPreviewDisplayed() throws AWTException, InterruptedException {
 		lp = new LoginPage(driver);
 		lp.presteps();

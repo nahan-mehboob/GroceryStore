@@ -10,14 +10,14 @@
 	<test name="MySecondTest">
 		<parameter name="Browser" value="firefox"></parameter>
 		<classes>
-			<class name="testCases.LoginTestCases"></class>
+			<class name="testCases.PushNotificationsTestCases"></class>
 		</classes>
 	</test>
 
 	<test name="MyThirdTest">
 		<parameter name="Browser" value="edge"></parameter>
 		<classes>
-			<class name="testCases.LoginTestCases"></class>
+			<class name="testCases.AdminUsersTestCases"></class>
 		</classes>
 	</test>
 

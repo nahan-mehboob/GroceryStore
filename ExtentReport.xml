@@ -5,17 +5,24 @@
 	</listeners>
 	<test name="My Test">
 		<parameter name="Browser" value="chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Smoke test" />
+				<include  name = "Sanity test"/>
+				<include  name = "Regression test"/>
+			</run>
+		</groups>
 		<classes>
-			<class name = "testCases.LoginTestCases"/> 
-			<class name = "testCases.HomeTestCases"/> 
-			<class name="testCases.ManageDeliveryBoyTestCases"/> 
-			<class name="testCases.MobileSliderTestCases"/> 
-			<class name="testCases.PushNotificationsTestCases"/> 
-			<class name="testCases.ManageExpenseTestCases"/> 
-			<class name="testCases.SettingsPageTestCases"/> 
-			<class name="testCases.ManageOrdersTestCases"/> 
-			<class name="testCases.ManageProductTestCases" /> 
-			<class name="testCases.ManageLocationTestCases" /> 
+			<class name="testCases.LoginTestCases" />
+			<class name="testCases.HomeTestCases" />
+			<class name="testCases.ManageDeliveryBoyTestCases" />
+			<class name="testCases.MobileSliderTestCases" />
+			<class name="testCases.PushNotificationsTestCases" />
+			<class name="testCases.ManageExpenseTestCases" />
+			<class name="testCases.SettingsPageTestCases" />
+			<class name="testCases.ManageOrdersTestCases" />
+			<class name="testCases.ManageProductTestCases" />
+			<class name="testCases.ManageLocationTestCases" />
 			<class name="testCases.AdminUsersTestCases" />
 		</classes>
 	</test>

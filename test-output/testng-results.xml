@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="4" ignored="3" total="8" passed="0" failed="1" skipped="0">
+<testng-results skipped="0" failed="0" ignored="14" total="20" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-30T09:59:29 IST" name="RetrySuite" finished-at="2022-12-30T10:00:05 IST" duration-ms="36220">
+  <suite name="My Extent Report Suite" duration-ms="53901" started-at="2023-01-09T23:04:02 IST" finished-at="2023-01-09T23:04:56 IST">
     <groups>
+      <group name="Smoke test">
+        <method signature="ManageDeliveryBoyTestCases.validateToolKit()[pri:1, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f]" name="validateToolKit" class="testCases.ManageDeliveryBoyTestCases"/>
+        <method signature="PushNotificationsTestCases.validateTitleOfThePage()[pri:1, instance:testCases.PushNotificationsTestCases@25af5db5]" name="validateTitleOfThePage" class="testCases.PushNotificationsTestCases"/>
+      </group> <!-- Smoke test -->
+      <group name="Sanity test">
+        <method signature="ManageLocationTestCases.validateCountOfActiveStatus()[pri:1, instance:testCases.ManageLocationTestCases@5bcea91b]" name="validateCountOfActiveStatus" class="testCases.ManageLocationTestCases"/>
+        <method signature="ManageProductTestCases.validateVegIsSelectedByDefault()[pri:1, instance:testCases.ManageProductTestCases@12cdcf4]" name="validateVegIsSelectedByDefault" class="testCases.ManageProductTestCases"/>
+      </group> <!-- Sanity test -->
+      <group name="Regression test">
+        <method signature="AdminUsersTestCases.validateAdminProfileWithFaker()[pri:1, instance:testCases.AdminUsersTestCases@5f3a4b84]" name="validateAdminProfileWithFaker" class="testCases.AdminUsersTestCases"/>
+        <method signature="ManageOrdersTestCases.validateDeletionOfProductOrder()[pri:4, instance:testCases.ManageOrdersTestCases@27f723]" name="validateDeletionOfProductOrder" class="testCases.ManageOrdersTestCases"/>
+      </group> <!-- Regression test -->
     </groups>
-    <test started-at="2022-12-30T09:59:29 IST" name="MyRetryTest" finished-at="2022-12-30T10:00:05 IST" duration-ms="36220">
+    <test name="My Test" duration-ms="53901" started-at="2023-01-09T23:04:02 IST" finished-at="2023-01-09T23:04:56 IST">
+      <class name="testCases.ManageDeliveryBoyTestCases">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f]" name="beforeMethod" is-config="true" duration-ms="4217" started-at="2023-01-09T23:04:02 IST" finished-at="2023-01-09T23:04:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateToolKit()[pri:1, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f]" name="validateToolKit" duration-ms="4436" started-at="2023-01-09T23:04:06 IST" description="Tool kit validation" finished-at="2023-01-09T23:04:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateToolKit -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f]" name="afterMethod" is-config="true" duration-ms="148" started-at="2023-01-09T23:04:11 IST" finished-at="2023-01-09T23:04:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateToolKit status=SUCCESS method=ManageDeliveryBoyTestCases.validateToolKit()[pri:1, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.ManageDeliveryBoyTestCases -->
       <class name="testCases.ManageProductTestCases">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:29 IST" name="beforeMethod" finished-at="2022-12-30T09:59:31 IST" duration-ms="2648" status="PASS">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageProductTestCases@12cdcf4]" name="beforeMethod" is-config="true" duration-ms="2339" started-at="2023-01-09T23:04:15 IST" finished-at="2023-01-09T23:04:17 IST">
           <params>
             <param index="0">
               <value>
@@ -18,444 +58,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:31 IST" name="validateUploadedFileIsPreviewDisplayed" description="Validating whether the uploaded file is previewed" finished-at="2022-12-30T09:59:37 IST" duration-ms="5383" status="SKIP">
-          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
-            <message>
-              <![CDATA[move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [abb20102cfe9d4830e023c39612492f0, actions {actions=[org.openqa.selenium.interactions.Sequence@46d9aec8]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56963/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: abb20102cfe9d4830e023c39612492f0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [abb20102cfe9d4830e023c39612492f0, actions {actions=[org.openqa.selenium.interactions.Sequence@46d9aec8]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56963/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: abb20102cfe9d4830e023c39612492f0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-at utilities.FileHandling.fileUpload(FileHandling.java:19)
-at elementRepository.ManageProduct.verifyUploadedFileIsPreviewDisplayed(ManageProduct.java:73)
-at testCases.ManageProductTestCases.validateUploadedFileIsPreviewDisplayed(ManageProductTestCases.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
+        <test-method status="PASS" signature="validateVegIsSelectedByDefault()[pri:1, instance:testCases.ManageProductTestCases@12cdcf4]" name="validateVegIsSelectedByDefault" duration-ms="3213" started-at="2023-01-09T23:04:17 IST" description="Validating whether veg is selected by default" finished-at="2023-01-09T23:04:20 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateUploadedFileIsPreviewDisplayed -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:37 IST" name="afterMethod" finished-at="2022-12-30T09:59:37 IST" duration-ms="140" status="PASS">
+        </test-method> <!-- validateVegIsSelectedByDefault -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@12cdcf4]" name="afterMethod" is-config="true" duration-ms="130" started-at="2023-01-09T23:04:20 IST" finished-at="2023-01-09T23:04:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateUploadedFileIsPreviewDisplayed status=SKIP method=ManageProductTestCases.validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:37 IST" name="beforeMethod" finished-at="2022-12-30T09:59:39 IST" duration-ms="1748" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:39 IST" name="validateUploadedFileIsPreviewDisplayed" description="Validating whether the uploaded file is previewed" finished-at="2022-12-30T09:59:44 IST" duration-ms="5112" status="SKIP">
-          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
-            <message>
-              <![CDATA[move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf4cb941e42838e0a09060c71cf5ba6c, actions {actions=[org.openqa.selenium.interactions.Sequence@63bde6c2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56985}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56985/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf4cb941e42838e0a09060c71cf5ba6c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf4cb941e42838e0a09060c71cf5ba6c, actions {actions=[org.openqa.selenium.interactions.Sequence@63bde6c2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56985}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56985/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf4cb941e42838e0a09060c71cf5ba6c
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-at utilities.FileHandling.fileUpload(FileHandling.java:19)
-at elementRepository.ManageProduct.verifyUploadedFileIsPreviewDisplayed(ManageProduct.java:73)
-at testCases.ManageProductTestCases.validateUploadedFileIsPreviewDisplayed(ManageProductTestCases.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUploadedFileIsPreviewDisplayed -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:44 IST" name="afterMethod" finished-at="2022-12-30T09:59:44 IST" duration-ms="103" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateUploadedFileIsPreviewDisplayed status=SKIP method=ManageProductTestCases.validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:44 IST" name="beforeMethod" finished-at="2022-12-30T09:59:46 IST" duration-ms="1778" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:46 IST" name="validateUploadedFileIsPreviewDisplayed" description="Validating whether the uploaded file is previewed" finished-at="2022-12-30T09:59:51 IST" duration-ms="5047" status="SKIP">
-          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
-            <message>
-              <![CDATA[move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1435b47e09fb3209aa58b47768af8de0, actions {actions=[org.openqa.selenium.interactions.Sequence@2903c6ff]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57007/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1435b47e09fb3209aa58b47768af8de0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1435b47e09fb3209aa58b47768af8de0, actions {actions=[org.openqa.selenium.interactions.Sequence@2903c6ff]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57007/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1435b47e09fb3209aa58b47768af8de0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-at utilities.FileHandling.fileUpload(FileHandling.java:19)
-at elementRepository.ManageProduct.verifyUploadedFileIsPreviewDisplayed(ManageProduct.java:73)
-at testCases.ManageProductTestCases.validateUploadedFileIsPreviewDisplayed(ManageProductTestCases.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUploadedFileIsPreviewDisplayed -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:51 IST" name="afterMethod" finished-at="2022-12-30T09:59:51 IST" duration-ms="105" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateUploadedFileIsPreviewDisplayed status=SKIP method=ManageProductTestCases.validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:51 IST" name="beforeMethod" finished-at="2022-12-30T09:59:53 IST" duration-ms="1746" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:53 IST" name="validateUploadedFileIsPreviewDisplayed" description="Validating whether the uploaded file is previewed" finished-at="2022-12-30T09:59:58 IST" duration-ms="5051" status="SKIP">
-          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
-            <message>
-              <![CDATA[move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9c1fa42b7ce07cf6177c150a9b79e267, actions {actions=[org.openqa.selenium.interactions.Sequence@216e0771]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57029}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57029/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9c1fa42b7ce07cf6177c150a9b79e267]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9c1fa42b7ce07cf6177c150a9b79e267, actions {actions=[org.openqa.selenium.interactions.Sequence@216e0771]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57029}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57029/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9c1fa42b7ce07cf6177c150a9b79e267
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-at utilities.FileHandling.fileUpload(FileHandling.java:19)
-at elementRepository.ManageProduct.verifyUploadedFileIsPreviewDisplayed(ManageProduct.java:73)
-at testCases.ManageProductTestCases.validateUploadedFileIsPreviewDisplayed(ManageProductTestCases.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUploadedFileIsPreviewDisplayed -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:58 IST" name="afterMethod" finished-at="2022-12-30T09:59:58 IST" duration-ms="113" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateUploadedFileIsPreviewDisplayed status=SKIP method=ManageProductTestCases.validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T09:59:58 IST" name="beforeMethod" finished-at="2022-12-30T10:00:00 IST" duration-ms="1787" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T10:00:00 IST" name="validateUploadedFileIsPreviewDisplayed" description="Validating whether the uploaded file is previewed" finished-at="2022-12-30T10:00:05 IST" duration-ms="5129" status="FAIL">
-          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
-            <message>
-              <![CDATA[move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d36995ab38107d5e675d044ceaa60f0, actions {actions=[org.openqa.selenium.interactions.Sequence@254f906e]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57052/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d36995ab38107d5e675d044ceaa60f0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'LAPTOP-KQD2HIRQ', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d36995ab38107d5e675d044ceaa60f0, actions {actions=[org.openqa.selenium.interactions.Sequence@254f906e]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57052/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d36995ab38107d5e675d044ceaa60f0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-at utilities.FileHandling.fileUpload(FileHandling.java:19)
-at elementRepository.ManageProduct.verifyUploadedFileIsPreviewDisplayed(ManageProduct.java:73)
-at testCases.ManageProductTestCases.validateUploadedFileIsPreviewDisplayed(ManageProductTestCases.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUploadedFileIsPreviewDisplayed -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@74f0ea28]" started-at="2022-12-30T10:00:05 IST" name="afterMethod" finished-at="2022-12-30T10:00:05 IST" duration-ms="283" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateUploadedFileIsPreviewDisplayed status=FAILURE method=ManageProductTestCases.validateUploadedFileIsPreviewDisplayed()[pri:4, instance:testCases.ManageProductTestCases@74f0ea28] output={null}]]]>
+                <![CDATA[[TestResult name=validateVegIsSelectedByDefault status=SUCCESS method=ManageProductTestCases.validateVegIsSelectedByDefault()[pri:1, instance:testCases.ManageProductTestCases@12cdcf4] output={null}]]]>
               </value>
             </param>
           </params>
@@ -463,6 +74,118 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testCases.ManageProductTestCases -->
-    </test> <!-- MyRetryTest -->
-  </suite> <!-- RetrySuite -->
+      <class name="testCases.PushNotificationsTestCases">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.PushNotificationsTestCases@25af5db5]" name="beforeMethod" is-config="true" duration-ms="2269" started-at="2023-01-09T23:04:11 IST" finished-at="2023-01-09T23:04:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateTitleOfThePage()[pri:1, instance:testCases.PushNotificationsTestCases@25af5db5]" name="validateTitleOfThePage" duration-ms="1343" started-at="2023-01-09T23:04:13 IST" description="Validating the title of push notifications page" finished-at="2023-01-09T23:04:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitleOfThePage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationsTestCases@25af5db5]" name="afterMethod" is-config="true" duration-ms="138" started-at="2023-01-09T23:04:14 IST" finished-at="2023-01-09T23:04:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTitleOfThePage status=SUCCESS method=PushNotificationsTestCases.validateTitleOfThePage()[pri:1, instance:testCases.PushNotificationsTestCases@25af5db5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.PushNotificationsTestCases -->
+      <class name="testCases.ManageLocationTestCases">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageLocationTestCases@5bcea91b]" name="beforeMethod" is-config="true" duration-ms="2279" started-at="2023-01-09T23:04:20 IST" finished-at="2023-01-09T23:04:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateCountOfActiveStatus()[pri:1, instance:testCases.ManageLocationTestCases@5bcea91b]" name="validateCountOfActiveStatus" duration-ms="1445" started-at="2023-01-09T23:04:23 IST" description="Validate the count for the status active" finished-at="2023-01-09T23:04:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCountOfActiveStatus -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageLocationTestCases@5bcea91b]" name="afterMethod" is-config="true" duration-ms="16270" started-at="2023-01-09T23:04:24 IST" finished-at="2023-01-09T23:04:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCountOfActiveStatus status=SUCCESS method=ManageLocationTestCases.validateCountOfActiveStatus()[pri:1, instance:testCases.ManageLocationTestCases@5bcea91b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.ManageLocationTestCases -->
+      <class name="testCases.AdminUsersTestCases">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.AdminUsersTestCases@5f3a4b84]" name="beforeMethod" is-config="true" duration-ms="2387" started-at="2023-01-09T23:04:40 IST" finished-at="2023-01-09T23:04:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateAdminProfileWithFaker()[pri:1, instance:testCases.AdminUsersTestCases@5f3a4b84]" name="validateAdminProfileWithFaker" duration-ms="3028" started-at="2023-01-09T23:04:43 IST" description="validating a user profile already exists while using faker class" finished-at="2023-01-09T23:04:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAdminProfileWithFaker -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.AdminUsersTestCases@5f3a4b84]" name="afterMethod" is-config="true" duration-ms="129" started-at="2023-01-09T23:04:46 IST" finished-at="2023-01-09T23:04:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateAdminProfileWithFaker status=SUCCESS method=AdminUsersTestCases.validateAdminProfileWithFaker()[pri:1, instance:testCases.AdminUsersTestCases@5f3a4b84] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.AdminUsersTestCases -->
+      <class name="testCases.ManageOrdersTestCases">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageOrdersTestCases@27f723]" name="beforeMethod" is-config="true" duration-ms="2357" started-at="2023-01-09T23:04:46 IST" finished-at="2023-01-09T23:04:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateDeletionOfProductOrder()[pri:4, instance:testCases.ManageOrdersTestCases@27f723]" name="validateDeletionOfProductOrder" duration-ms="7269" started-at="2023-01-09T23:04:48 IST" description="Validating whether the delete action is successfully performed" finished-at="2023-01-09T23:04:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeletionOfProductOrder -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageOrdersTestCases@27f723]" name="afterMethod" is-config="true" duration-ms="197" started-at="2023-01-09T23:04:55 IST" finished-at="2023-01-09T23:04:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateDeletionOfProductOrder status=SUCCESS method=ManageOrdersTestCases.validateDeletionOfProductOrder()[pri:4, instance:testCases.ManageOrdersTestCases@27f723] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.ManageOrdersTestCases -->
+    </test> <!-- My Test -->
+  </suite> <!-- My Extent Report Suite -->
 </testng-results>

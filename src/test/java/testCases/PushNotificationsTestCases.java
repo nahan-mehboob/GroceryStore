@@ -12,7 +12,7 @@ public class PushNotificationsTestCases extends BaseClass{
 	LoginPage lp;
 	PushNotifications pn;
 
-	@Test(priority=1, description="Validating the title of push notifications page", groups = {"SmokeTest"})
+	@Test(priority=1, description="Validating the title of push notifications page", groups = {"Smoke test"})
 	public void validateTitleOfThePage() {
 		lp = new LoginPage(driver);
 		lp.presteps();

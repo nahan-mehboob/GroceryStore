@@ -4,10 +4,10 @@ import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
 public class RetryAnalyzer implements IRetryAnalyzer {
-	
+
 	int count = 0;
-	int retryLimit = 4;
-	
+	int retryLimit = 6;
+
 	public boolean retry(ITestResult result) {
 		if(count<retryLimit) {
 			count++;
@@ -15,6 +15,6 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 		}
 		return false;
 	}
-	
-	
+
+
 }

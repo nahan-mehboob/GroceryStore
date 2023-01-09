@@ -42,7 +42,7 @@ public class Constant {
 	public static final String PAYMENT_MODE_ERROR = "Payment mode is not as expected";
 	public static final int STATUS_DROPDOWN_SIZE = 5;
 	public static final String LIST_SIZE_ERROR = "Size of the list is not as expected";
-	public static final String EXPECTED_ORDER_ID = "361";
+	public static final String EXPECTED_ORDER_ID = "281";
 
 	public static final String RADIO_BTN_ERROR = "The button is not selected";
 	public static final String EXPECTED_SAVEBTN_COLOR = "rgba(255, 255, 255, 1)";

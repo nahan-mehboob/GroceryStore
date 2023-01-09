@@ -13,7 +13,7 @@ public class ManageDeliveryBoyTestCases extends BaseClass {
 	LoginPage lp;
 	ManageDeliveryBoy mdb;
 
-	@Test(priority = 1, description = "Tool kit validation", groups = {"SmokeTest"})
+	@Test(priority = 1, description = "Tool kit validation", groups = {"Smoke test"})
 	public void validateToolKit() throws InterruptedException {
 		lp = new LoginPage(driver);
 		lp.presteps();

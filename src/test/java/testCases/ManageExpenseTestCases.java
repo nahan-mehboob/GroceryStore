@@ -25,6 +25,6 @@ public class ManageExpenseTestCases extends BaseClass{
 		softAssert.assertAll();
 	}
 
-	
+
 
 }

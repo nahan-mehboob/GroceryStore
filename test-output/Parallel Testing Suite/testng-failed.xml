@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Parallel Testing Suite]">
-  <test thread-count="5" parallel="methods" name="My First Test(failed)">
+  <test thread-count="5" name="My First Test(failed)" parallel="methods">
     <parameter name="Browser" value="chrome"/>
     <classes>
       <class name="testCases.PushNotificationsTestCases">
         <methods>
-          <include name="afterMethod"/>
-          <include name="validateAlertMessage"/>
           <include name="validateAlertMsgBgColor"/>
           <include name="validateColorOfMandatoryField"/>
+          <include name="validateAlertMessage"/>
           <include name="beforeMethod"/>
-          <include name="validateTitleOfThePage"/>
+          <include name="afterMethod"/>
           <include name="validateColorOfSendButton"/>
         </methods>
       </class> <!-- testCases.PushNotificationsTestCases -->

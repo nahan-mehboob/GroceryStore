@@ -46,7 +46,7 @@ public class Synchronisation {
 		//waits for the element to be selected
 		wait.until(ExpectedConditions.elementSelectionStateToBe(element,true));
 	}
-	
+
 	public void fluentWait(WebDriver driver) {
 		Wait<WebDriver>wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(Duration.ofSeconds(10))

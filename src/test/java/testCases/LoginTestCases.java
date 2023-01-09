@@ -24,15 +24,14 @@ public class LoginTestCases extends BaseClass{
 	}
 
 	@Test(priority = 2, description="Login using data provider", dataProvider = "data")
-	public void loggedInProfileNameValidationUsingDataProvider(String username, String password) {
+	public void loggedInProfileNameValidation(String username, String password) {
 		lp = new LoginPage(driver);
 		//lp.presteps();
 		lp.getUserName(username);
 		lp.getPassword(password);
 		lp.clickSignin();
-		String expectedProfileName = Constant.EXPECTED_PROFILE_NAME;
-		String actualProfileName = lp.profileNameVerification();
-		Assert.assertEquals(actualProfileName, expectedProfileName,Constant.LOGIN_ERROR);
+		Boolean actualResult = lp.signinFailAlert();
+		Assert.assertTrue(actualResult,Constant.LOGIN_ERROR);
 	}
 
 	@Test(priority=3, description="Validating color property of profile name")
@@ -67,7 +66,6 @@ public class LoginTestCases extends BaseClass{
 	@DataProvider(name = "data")
 	public Object [][] getuserData(){
 		return new Object[][] {
-			{"admin", "admin"},
 			{"admin5", "admin"},
 			{"admin", "admin4"},
 			{"admin1", "admin2"},

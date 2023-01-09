@@ -56,7 +56,7 @@ public class ManageExpense {
 		return gu.getElementText(newTitleFailAlert);
 	}
 
-	
+
 
 
 }

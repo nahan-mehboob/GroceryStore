@@ -3,6 +3,7 @@
 		<parameter name="Browser" value="chrome" />
 		<classes>
 			<class name="testCases.PushNotificationsTestCases" />
+			<class name="testCases.ManageOrdersTestCases" />
 		</classes>
 	</test>
 </suite>

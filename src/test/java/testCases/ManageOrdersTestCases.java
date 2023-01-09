@@ -1,5 +1,6 @@
 package testCases;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -13,7 +14,7 @@ public class ManageOrdersTestCases extends BaseClass {
 	LoginPage lp;
 	ManageOrders mo; 
 
-	@Test(priority = 4, description = "Validating whether the delete action is successfully performed")
+	@Test(priority = 4, description = "Validating whether the delete action is successfully performed", groups = {"Regression test"})
 	public void validateDeletionOfProductOrder() throws InterruptedException {
 		lp = new LoginPage(driver);
 		lp.presteps();
@@ -31,7 +32,7 @@ public class ManageOrdersTestCases extends BaseClass {
 		Boolean actualText = mo.verifyPaymentModeIsBank();
 		Assert.assertTrue(actualText,Constant.PAYMENT_MODE_ERROR);
 	}
-	
+
 	@Test(priority = 1, description = "Validating size of the status dropdown")
 	public void validateSizeOfStatusDropdown() {
 		lp = new LoginPage(driver);
@@ -46,12 +47,12 @@ public class ManageOrdersTestCases extends BaseClass {
 		lp = new LoginPage(driver);
 		lp.presteps();
 		mo = new ManageOrders(driver);
-		SoftAssert softAssert  = new SoftAssert();
 		String actualOrderId = mo.verifyOrderId();
-		String expectedOrderId = Constant.EXPECTED_ORDER_ID;
-		softAssert.assertEquals(actualOrderId, expectedOrderId,Constant.WRONG_TEXT_ERROR);
+		String expectedOrderId = mo.searchOrderId();
 		String actualMethod = mo.verifyPaymentMethod();
-		String expectedMethod = Constant.EXPECTED_PAYMENT_MODE;
+		String expectedMethod =mo.searchPaymentMode();
+		SoftAssert softAssert  = new SoftAssert();
+		softAssert.assertEquals(actualOrderId, expectedOrderId,Constant.WRONG_TEXT_ERROR);
 		softAssert.assertEquals(actualMethod, expectedMethod, Constant.WRONG_TEXT_ERROR);
 		softAssert.assertAll();
 	}

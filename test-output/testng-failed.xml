@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [RetrySuite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My Extent Report Suite]">
   <listeners>
-    <listener class-name="testCases.AnnotationTransformer"/>
+    <listener class-name="utilities.ExtentReportUtility"/>
   </listeners>
-  <test thread-count="5" name="MyRetryTest(failed)">
+  <test thread-count="5" name="My Test(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
       <class name="testCases.ManageProductTestCases">
         <methods>
-          <include name="afterMethod"/>
           <include name="beforeMethod"/>
+          <include name="afterMethod"/>
           <include name="validateUploadedFileIsPreviewDisplayed"/>
         </methods>
       </class> <!-- testCases.ManageProductTestCases -->
     </classes>
-  </test> <!-- MyRetryTest(failed) -->
-</suite> <!-- Failed suite [RetrySuite] -->
+  </test> <!-- My Test(failed) -->
+</suite> <!-- Failed suite [My Extent Report Suite] -->

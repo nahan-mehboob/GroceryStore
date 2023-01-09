@@ -36,6 +36,9 @@ public class LoginPage {
 	@FindBy(xpath = "//label[contains(text(),'Remember Me')]")
 	WebElement rememberCheckBox;
 
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+	WebElement signInAlert;
+
 	/*@FindBy(xpath = "//input[@id='remember']")
 	WebElement verificationOfRememberCheckBox;*/
 
@@ -55,6 +58,11 @@ public class LoginPage {
 	public String profileNameVerification() {
 		return gu.getElementText(profileName);
 	}
+
+	public Boolean signinFailAlert() {
+		return gu.elementIsDisplayed(signInAlert);
+	}
+
 
 	public String stylePropertyVerification() {
 		String color = gu.stylePropertyValidation(profileName, "color");

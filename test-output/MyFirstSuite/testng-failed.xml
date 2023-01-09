@@ -12,15 +12,22 @@
       <class name="testCases.LoginTestCases">
         <methods>
           <include name="afterMethod"/>
-          <include name="loggedInProfileNameValidationUsingDataProvider" invocation-numbers="1 2 3"/>
+          <include name="loggedInProfileNameValidation" invocation-numbers="1 2 3"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- testCases.LoginTestCases -->
-      <class name="testCases.ManageOrdersTestCases">
+      <class name="testCases.ManageProductTestCases">
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="validateDeletionOfProductOrder"/>
+          <include name="validateUploadedFileIsPreviewDisplayed"/>
+        </methods>
+      </class> <!-- testCases.ManageProductTestCases -->
+      <class name="testCases.ManageOrdersTestCases">
+        <methods>
+          <include name="validateOrderIdAndPaymentMode"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
       </class> <!-- testCases.ManageOrdersTestCases -->
     </classes>

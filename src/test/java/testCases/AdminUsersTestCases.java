@@ -12,7 +12,7 @@ public class AdminUsersTestCases extends BaseClass {
 	LoginPage lp;
 	AdminUsers au;
 
-	@Test(priority = 1, description = "validating a user profile already exists while using faker class")
+	@Test(priority = 1, description = "validating a user profile already exists while using faker class", groups = {"Regression test"})
 	public void validateAdminProfileWithFaker() {
 		lp = new LoginPage(driver);
 		lp.presteps();

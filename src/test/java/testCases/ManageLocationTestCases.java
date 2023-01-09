@@ -13,13 +13,13 @@ public class ManageLocationTestCases extends BaseClass{
 	LoginPage lp;
 	ManageLocation ml;
 
-	@Test(priority = 1, description = "Validate the count for the status active")
+	@Test(priority = 1, description = "Validate the count for the status active",groups = {"Sanity test"})
 	public void validateCountOfActiveStatus() {
 		lp = new LoginPage(driver);
 		lp.presteps();
 		ml = new ManageLocation(driver);
 		Boolean actualCount = ml.verifyCountOfActiveStatus();
-		Assert.assertTrue(actualCount);
+		Assert.assertTrue(actualCount, Constant.WRONG_TEXT_ERROR);
 	}
 
 	@Test(priority = 2, description = "Validate the value selected from the  state dropdown")

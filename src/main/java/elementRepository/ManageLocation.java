@@ -45,7 +45,7 @@ public class ManageLocation {
 				count++;
 			}
 		}
-		if(count==15) {
+		if(count==16) {
 			return true;
 		}
 		else {

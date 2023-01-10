@@ -80,8 +80,7 @@ public class ManageOrders {
 		basicClick();
 		gu.clickOnElement(paymentMode_Dropdown);
 		gu.selectFuncbyindex(paymentMode_Dropdown, 2);
-		s.clickElement(driver, "//body/div[1]/div[1]/section[1]/div[3]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[7]/button[1]");
-		gu.clickOnElement(searchBtn_SearchListOrders);
+		gu.cilckOnElementByJavaScript(driver, searchBtn_SearchListOrders);
 		List<WebElement> paymentMode_List = driver.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']/tbody/tr/td[5]"));
 		int size = paymentMode_List.size();
 		Boolean result = true;
@@ -107,7 +106,8 @@ public class ManageOrders {
 		basicClick();
 		String text = gu.getElementText(orderIdText);
 		gu.sendText(orderIdInputBox, text);
-		gu.cilckOnElementByJavaScript(driver, searchBtn_SearchListOrders);
+		s.clickElement(driver, "//body/div[1]/div[1]/section[1]/div[3]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[7]/button[1]");
+		gu.clickOnElement(searchBtn_SearchListOrders);
 		return gu.getElementText(orderId_Result);
 	}
 
@@ -122,7 +122,8 @@ public class ManageOrders {
 		gu.clearInputField(orderIdInputBox);
 		String text = gu.getElementText(orderIdText);
 		gu.sendText(orderIdInputBox, text);
-		gu.cilckOnElementByJavaScript(driver, searchBtn_SearchListOrders);
+		s.clickElement(driver, "//body/div[1]/div[1]/section[1]/div[3]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[7]/button[1]");
+		gu.clickOnElement(searchBtn_SearchListOrders);
 		gu.scrollToTheElement(paymentMode_Result, driver);
 		return gu.getElementText(paymentMode_Result);
 	}

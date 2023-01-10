@@ -1,6 +1,7 @@
 package utilities;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +27,18 @@ public class Synchronisation {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(time));
 	}
 
-	public void Elementvisible(WebDriver driver, String location) {
+	public void alertIsPresent(WebDriver driver) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.alertIsPresent());
+	}
+
+	public void elementSelectionStateToBe(WebDriver driver, WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		//waits for the element to be selected
+		wait.until(ExpectedConditions.elementSelectionStateToBe(element,true));
+	}
+
+	public void presenceOfTheElementLocated(WebDriver driver, String location) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(location)));
 	}
@@ -41,10 +53,69 @@ public class Synchronisation {
 		wait.until(ExpectedConditions.elementToBeSelected(By.xpath(target)));
 	}
 
-	public void checkselection(WebDriver driver, WebElement element) {
+	public void frameToBeAvaliableAndSwitchToIt(WebDriver driver, String frameId) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		//waits for the element to be selected
-		wait.until(ExpectedConditions.elementSelectionStateToBe(element,true));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameId));
+	}
+
+	public void invisibilityOfTheElementLocated(WebDriver driver, String location) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(location)));
+	}
+
+	public void invisibilityOfElementWithText(WebDriver driver, String text,String location) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOfElementWithText(By.xpath(location), text));
+	}
+
+	public void presenceOfAllElementsLocatedBy(WebDriver driver, String location) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(location)));
+	}
+
+	public void textToBePresentInElement(WebDriver driver, String text,WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.textToBePresentInElement(element, text));
+	}
+
+	public void textToBePresentInElementLocated(WebDriver driver, String text,String locator) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(locator), text));
+	}
+
+	public void textToBePresentInElementValue(WebDriver driver, String text,WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.textToBePresentInElementValue(element, text));
+	}
+
+	public void titleIs(WebDriver driver, String title) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.titleIs(title));
+	}
+
+	public void titleContains(WebDriver driver, String title) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.titleContains(title));
+	}
+
+	public void visibilityOf(WebDriver driver, WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+
+	public List<WebElement> visibilityOfAllElements(WebDriver driver, WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOfAllElements(element));
+	}
+
+	public void visibilityOfAllElementsLocatedBy(WebDriver driver, String location) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(location)));
+	}
+
+	public void visibilityOfElementLocated(WebDriver driver, String location) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(location)));
 	}
 
 	public void fluentWait(WebDriver driver) {

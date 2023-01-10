@@ -1,165 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="14" total="20" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="My Extent Report Suite" duration-ms="53901" started-at="2023-01-09T23:04:02 IST" finished-at="2023-01-09T23:04:56 IST">
+  <suite name="TestRunnerSuite" duration-ms="29502" started-at="2023-01-10T10:37:22 IST" finished-at="2023-01-10T10:37:51 IST">
     <groups>
-      <group name="Smoke test">
-        <method signature="ManageDeliveryBoyTestCases.validateToolKit()[pri:1, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f]" name="validateToolKit" class="testCases.ManageDeliveryBoyTestCases"/>
-        <method signature="PushNotificationsTestCases.validateTitleOfThePage()[pri:1, instance:testCases.PushNotificationsTestCases@25af5db5]" name="validateTitleOfThePage" class="testCases.PushNotificationsTestCases"/>
-      </group> <!-- Smoke test -->
-      <group name="Sanity test">
-        <method signature="ManageLocationTestCases.validateCountOfActiveStatus()[pri:1, instance:testCases.ManageLocationTestCases@5bcea91b]" name="validateCountOfActiveStatus" class="testCases.ManageLocationTestCases"/>
-        <method signature="ManageProductTestCases.validateVegIsSelectedByDefault()[pri:1, instance:testCases.ManageProductTestCases@12cdcf4]" name="validateVegIsSelectedByDefault" class="testCases.ManageProductTestCases"/>
-      </group> <!-- Sanity test -->
       <group name="Regression test">
-        <method signature="AdminUsersTestCases.validateAdminProfileWithFaker()[pri:1, instance:testCases.AdminUsersTestCases@5f3a4b84]" name="validateAdminProfileWithFaker" class="testCases.AdminUsersTestCases"/>
-        <method signature="ManageOrdersTestCases.validateDeletionOfProductOrder()[pri:4, instance:testCases.ManageOrdersTestCases@27f723]" name="validateDeletionOfProductOrder" class="testCases.ManageOrdersTestCases"/>
+        <method signature="ManageOrdersTestCases.validateDeletionOfProductOrder()[pri:4, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="validateDeletionOfProductOrder" class="testCases.ManageOrdersTestCases"/>
       </group> <!-- Regression test -->
     </groups>
-    <test name="My Test" duration-ms="53901" started-at="2023-01-09T23:04:02 IST" finished-at="2023-01-09T23:04:56 IST">
-      <class name="testCases.ManageDeliveryBoyTestCases">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f]" name="beforeMethod" is-config="true" duration-ms="4217" started-at="2023-01-09T23:04:02 IST" finished-at="2023-01-09T23:04:06 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateToolKit()[pri:1, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f]" name="validateToolKit" duration-ms="4436" started-at="2023-01-09T23:04:06 IST" description="Tool kit validation" finished-at="2023-01-09T23:04:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateToolKit -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f]" name="afterMethod" is-config="true" duration-ms="148" started-at="2023-01-09T23:04:11 IST" finished-at="2023-01-09T23:04:11 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateToolKit status=SUCCESS method=ManageDeliveryBoyTestCases.validateToolKit()[pri:1, instance:testCases.ManageDeliveryBoyTestCases@5bfbf16f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.ManageDeliveryBoyTestCases -->
-      <class name="testCases.ManageProductTestCases">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageProductTestCases@12cdcf4]" name="beforeMethod" is-config="true" duration-ms="2339" started-at="2023-01-09T23:04:15 IST" finished-at="2023-01-09T23:04:17 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateVegIsSelectedByDefault()[pri:1, instance:testCases.ManageProductTestCases@12cdcf4]" name="validateVegIsSelectedByDefault" duration-ms="3213" started-at="2023-01-09T23:04:17 IST" description="Validating whether veg is selected by default" finished-at="2023-01-09T23:04:20 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateVegIsSelectedByDefault -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageProductTestCases@12cdcf4]" name="afterMethod" is-config="true" duration-ms="130" started-at="2023-01-09T23:04:20 IST" finished-at="2023-01-09T23:04:20 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateVegIsSelectedByDefault status=SUCCESS method=ManageProductTestCases.validateVegIsSelectedByDefault()[pri:1, instance:testCases.ManageProductTestCases@12cdcf4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.ManageProductTestCases -->
-      <class name="testCases.PushNotificationsTestCases">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.PushNotificationsTestCases@25af5db5]" name="beforeMethod" is-config="true" duration-ms="2269" started-at="2023-01-09T23:04:11 IST" finished-at="2023-01-09T23:04:13 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateTitleOfThePage()[pri:1, instance:testCases.PushNotificationsTestCases@25af5db5]" name="validateTitleOfThePage" duration-ms="1343" started-at="2023-01-09T23:04:13 IST" description="Validating the title of push notifications page" finished-at="2023-01-09T23:04:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTitleOfThePage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.PushNotificationsTestCases@25af5db5]" name="afterMethod" is-config="true" duration-ms="138" started-at="2023-01-09T23:04:14 IST" finished-at="2023-01-09T23:04:15 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateTitleOfThePage status=SUCCESS method=PushNotificationsTestCases.validateTitleOfThePage()[pri:1, instance:testCases.PushNotificationsTestCases@25af5db5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.PushNotificationsTestCases -->
-      <class name="testCases.ManageLocationTestCases">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageLocationTestCases@5bcea91b]" name="beforeMethod" is-config="true" duration-ms="2279" started-at="2023-01-09T23:04:20 IST" finished-at="2023-01-09T23:04:23 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateCountOfActiveStatus()[pri:1, instance:testCases.ManageLocationTestCases@5bcea91b]" name="validateCountOfActiveStatus" duration-ms="1445" started-at="2023-01-09T23:04:23 IST" description="Validate the count for the status active" finished-at="2023-01-09T23:04:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCountOfActiveStatus -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageLocationTestCases@5bcea91b]" name="afterMethod" is-config="true" duration-ms="16270" started-at="2023-01-09T23:04:24 IST" finished-at="2023-01-09T23:04:40 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateCountOfActiveStatus status=SUCCESS method=ManageLocationTestCases.validateCountOfActiveStatus()[pri:1, instance:testCases.ManageLocationTestCases@5bcea91b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.ManageLocationTestCases -->
-      <class name="testCases.AdminUsersTestCases">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.AdminUsersTestCases@5f3a4b84]" name="beforeMethod" is-config="true" duration-ms="2387" started-at="2023-01-09T23:04:40 IST" finished-at="2023-01-09T23:04:43 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateAdminProfileWithFaker()[pri:1, instance:testCases.AdminUsersTestCases@5f3a4b84]" name="validateAdminProfileWithFaker" duration-ms="3028" started-at="2023-01-09T23:04:43 IST" description="validating a user profile already exists while using faker class" finished-at="2023-01-09T23:04:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAdminProfileWithFaker -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.AdminUsersTestCases@5f3a4b84]" name="afterMethod" is-config="true" duration-ms="129" started-at="2023-01-09T23:04:46 IST" finished-at="2023-01-09T23:04:46 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateAdminProfileWithFaker status=SUCCESS method=AdminUsersTestCases.validateAdminProfileWithFaker()[pri:1, instance:testCases.AdminUsersTestCases@5f3a4b84] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.AdminUsersTestCases -->
+    <test name="MyFirstTest" duration-ms="29502" started-at="2023-01-10T10:37:22 IST" finished-at="2023-01-10T10:37:51 IST">
       <class name="testCases.ManageOrdersTestCases">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageOrdersTestCases@27f723]" name="beforeMethod" is-config="true" duration-ms="2357" started-at="2023-01-09T23:04:46 IST" finished-at="2023-01-09T23:04:48 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="beforeMethod" is-config="true" duration-ms="3820" started-at="2023-01-10T10:37:22 IST" finished-at="2023-01-10T10:37:26 IST">
           <params>
             <param index="0">
               <value>
@@ -170,15 +21,93 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateDeletionOfProductOrder()[pri:4, instance:testCases.ManageOrdersTestCases@27f723]" name="validateDeletionOfProductOrder" duration-ms="7269" started-at="2023-01-09T23:04:48 IST" description="Validating whether the delete action is successfully performed" finished-at="2023-01-09T23:04:55 IST">
+        <test-method status="PASS" signature="validateSizeOfStatusDropdown()[pri:1, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="validateSizeOfStatusDropdown" duration-ms="2100" started-at="2023-01-10T10:37:26 IST" description="Validating size of the status dropdown" finished-at="2023-01-10T10:37:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSizeOfStatusDropdown -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="afterMethod" is-config="true" duration-ms="255" started-at="2023-01-10T10:37:28 IST" finished-at="2023-01-10T10:37:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateSizeOfStatusDropdown status=SUCCESS method=ManageOrdersTestCases.validateSizeOfStatusDropdown()[pri:1, instance:testCases.ManageOrdersTestCases@6b9651f3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="beforeMethod" is-config="true" duration-ms="2531" started-at="2023-01-10T10:37:28 IST" finished-at="2023-01-10T10:37:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validatePaymentModeIsBank()[pri:2, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="validatePaymentModeIsBank" duration-ms="3041" started-at="2023-01-10T10:37:31 IST" description="Validating whether the payment mode is bank itself while selecting bank from dropdown" finished-at="2023-01-10T10:37:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePaymentModeIsBank -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="afterMethod" is-config="true" duration-ms="420" started-at="2023-01-10T10:37:34 IST" finished-at="2023-01-10T10:37:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validatePaymentModeIsBank status=SUCCESS method=ManageOrdersTestCases.validatePaymentModeIsBank()[pri:2, instance:testCases.ManageOrdersTestCases@6b9651f3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="beforeMethod" is-config="true" duration-ms="2458" started-at="2023-01-10T10:37:34 IST" finished-at="2023-01-10T10:37:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateOrderIdAndPaymentMode()[pri:3, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="validateOrderIdAndPaymentMode" duration-ms="4278" started-at="2023-01-10T10:37:36 IST" description="Validating the text of given order id and its payment mode" finished-at="2023-01-10T10:37:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOrderIdAndPaymentMode -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="afterMethod" is-config="true" duration-ms="438" started-at="2023-01-10T10:37:41 IST" finished-at="2023-01-10T10:37:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateOrderIdAndPaymentMode status=SUCCESS method=ManageOrdersTestCases.validateOrderIdAndPaymentMode()[pri:3, instance:testCases.ManageOrdersTestCases@6b9651f3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="beforeMethod" is-config="true" duration-ms="2303" started-at="2023-01-10T10:37:41 IST" finished-at="2023-01-10T10:37:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateDeletionOfProductOrder()[pri:4, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="validateDeletionOfProductOrder" duration-ms="7358" started-at="2023-01-10T10:37:43 IST" description="Validating whether the delete action is successfully performed" finished-at="2023-01-10T10:37:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDeletionOfProductOrder -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageOrdersTestCases@27f723]" name="afterMethod" is-config="true" duration-ms="197" started-at="2023-01-09T23:04:55 IST" finished-at="2023-01-09T23:04:56 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.ManageOrdersTestCases@6b9651f3]" name="afterMethod" is-config="true" duration-ms="468" started-at="2023-01-10T10:37:51 IST" finished-at="2023-01-10T10:37:51 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateDeletionOfProductOrder status=SUCCESS method=ManageOrdersTestCases.validateDeletionOfProductOrder()[pri:4, instance:testCases.ManageOrdersTestCases@27f723] output={null}]]]>
+                <![CDATA[[TestResult name=validateDeletionOfProductOrder status=SUCCESS method=ManageOrdersTestCases.validateDeletionOfProductOrder()[pri:4, instance:testCases.ManageOrdersTestCases@6b9651f3] output={null}]]]>
               </value>
             </param>
           </params>
@@ -186,6 +115,6 @@
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testCases.ManageOrdersTestCases -->
-    </test> <!-- My Test -->
-  </suite> <!-- My Extent Report Suite -->
+    </test> <!-- MyFirstTest -->
+  </suite> <!-- TestRunnerSuite -->
 </testng-results>

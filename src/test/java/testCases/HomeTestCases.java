@@ -32,7 +32,7 @@ public class HomeTestCases extends BaseClass{
 		Assert.assertEquals(actualText_ME, expectedText_ME, Constant.WRONG_TEXT_ERROR);
 	}
 
-	@Test(priority=3, description="Validating the text of manage users")
+	@Test(priority=3, description="Validating the text of manage users", groups = {"Smoke test"})
 	public void manageUsersTextValidation() {
 		lp = new LoginPage(driver);
 		lp.presteps();

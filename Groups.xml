@@ -16,7 +16,7 @@
 			<class name="testCases.AdminUsersTestCases" /> 
 			<class name="testCases.ManageOrdersTestCases" />
 			<class name="testCases.HomeTestCases" />
-			
+			/**********
 		</classes>
 	</test>
 </suite>

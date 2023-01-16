@@ -5,13 +5,13 @@
 	</listeners>
 	<test name="My Test">
 		<parameter name="Browser" value="chrome"></parameter>
-		<groups>
+	<!--<groups>
 			<run>
 				<include name="Smoke test" />
-				<include  name = "Sanity test"/>
-				<include  name = "Regression test"/>
+				<include name="Sanity test" />
+				<include name="Regression test" />
 			</run>
-		</groups>
+		</groups>-->
 		<classes>
 			<class name="testCases.LoginTestCases" />
 			<class name="testCases.HomeTestCases" />

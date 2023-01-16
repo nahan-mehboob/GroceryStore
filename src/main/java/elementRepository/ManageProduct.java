@@ -68,8 +68,9 @@ public class ManageProduct {
 
 	public Boolean verifyUploadedFileIsPreviewDisplayed() throws AWTException, InterruptedException {
 		basicClick();
+		gu.mediumDelay(4000);
 		gu.scrollToTheElement(chooseFile, driver);
-		gu.mediumDelay(3000);
+		gu.mediumDelay(4000);
 		fh.fileUpload("C:\\Users\\admin\\eclipse-workspace\\GroceryStore\\src\\main\\resources\\Images\\Rice.png", chooseFile,driver);
 		gu.mediumDelay(3000);
 		Boolean status = gu.elementIsDisplayed(imagePreview);

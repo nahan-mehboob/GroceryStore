@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-TestRunnerSuite">
-                    <span>C:\Users\admin\eclipse-workspace\GroceryStore\TestRunner.xml</span>
+                    <span>C:\Users\admin\eclipse-workspace\GroceryStore\IncludeExclude.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-TestRunnerSuite">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +102,7 @@
                     <div class="method-list-content passed suite-TestRunnerSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestRunnerSuite" title="testCases.ManageOrdersTestCases" hash-for-method="validateDeletionOfProductOrder">validateDeletionOfProductOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestRunnerSuite" title="testCases.ManageOrdersTestCases" hash-for-method="validateOrderIdAndPaymentMode">validateOrderIdAndPaymentMode</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestRunnerSuite" title="testCases.ManageOrdersTestCases" hash-for-method="validatePaymentModeIsBank">validatePaymentModeIsBank</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestRunnerSuite" title="testCases.ManageOrdersTestCases" hash-for-method="validateSizeOfStatusDropdown">validateSizeOfStatusDropdown</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestRunnerSuite" title="testCases.LoginTestCases" hash-for-method="profileNameStyleValidation">profileNameStyleValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestRunnerSuite -->
@@ -135,43 +120,16 @@
           <div class="suite-TestRunnerSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.ManageOrdersTestCases</span>
+              <span class="class-name">testCases.LoginTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateDeletionOfProductOrder">
-                  </a> <!-- validateDeletionOfProductOrder -->
-                  <span class="method-name">validateDeletionOfProductOrder</span>
+                  <a name="profileNameStyleValidation">
+                  </a> <!-- profileNameStyleValidation -->
+                  <span class="method-name">profileNameStyleValidation</span>
                   <em>
-(Validating whether the delete action is successfully performed)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateOrderIdAndPaymentMode">
-                  </a> <!-- validateOrderIdAndPaymentMode -->
-                  <span class="method-name">validateOrderIdAndPaymentMode</span>
-                  <em>
-(Validating the text of given order id and its payment mode)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validatePaymentModeIsBank">
-                  </a> <!-- validatePaymentModeIsBank -->
-                  <span class="method-name">validatePaymentModeIsBank</span>
-                  <em>
-(Validating whether the payment mode is bank itself while selecting bank from dropdown)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateSizeOfStatusDropdown">
-                  </a> <!-- validateSizeOfStatusDropdown -->
-                  <span class="method-name">validateSizeOfStatusDropdown</span>
-                  <em>
-(Validating size of the status dropdown)                  </em>
+(Validating color property of profile name)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -179,7 +137,7 @@
         </div> <!-- panel TestRunnerSuite -->
         <div panel-name="test-xml-TestRunnerSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\admin\eclipse-workspace\GroceryStore\TestRunner.xml</span>
+            <span class="header-content">C:\Users\admin\eclipse-workspace\GroceryStore\IncludeExclude.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -189,7 +147,11 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;MyFirstTest&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.ManageOrdersTestCases&quot;/&gt;
+      &lt;class name=&quot;testCases.LoginTestCases&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;profileNameStyleValidation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testCases.LoginTestCases --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- MyFirstTest --&gt;
 &lt;/suite&gt; &lt;!-- TestRunnerSuite --&gt;
@@ -213,14 +175,6 @@
             <span class="header-content">Groups for TestRunnerSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Regression test</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">validateDeletionOfProductOrder</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-TestRunnerSuite" class="panel">
@@ -237,28 +191,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateDeletionOfProductOrder')
-data.setCell(0, 2, 'testCases.ManageOrdersTestCases')
-data.setCell(0, 3, 7358);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateOrderIdAndPaymentMode')
-data.setCell(1, 2, 'testCases.ManageOrdersTestCases')
-data.setCell(1, 3, 4278);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validatePaymentModeIsBank')
-data.setCell(2, 2, 'testCases.ManageOrdersTestCases')
-data.setCell(2, 3, 3041);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateSizeOfStatusDropdown')
-data.setCell(3, 2, 'testCases.ManageOrdersTestCases')
-data.setCell(3, 3, 2100);
+data.setCell(0, 1, 'profileNameStyleValidation')
+data.setCell(0, 2, 'testCases.LoginTestCases')
+data.setCell(0, 3, 751);
 window.suiteTableData['TestRunnerSuite']= { tableData: data, tableDiv: 'times-div-TestRunnerSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 751 ms</span>
               <div id="times-div-TestRunnerSuite">
               </div> <!-- times-div-TestRunnerSuite -->
             </div> <!-- times-div -->
@@ -273,9 +215,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestRunnerSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.LoginTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loggedInProfileNameValidation</span>
+                <br/>
+                <span class="ignored-method-name">loggedInProfileNameValidation</span>
+                <br/>
+                <span class="ignored-method-name">validationOfRememberMeCheckbox</span>
+                <br/>
+                <span class="ignored-method-name">excelRead</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestRunnerSuite" class="panel">
@@ -284,54 +239,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.ManageOrdersTestCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.LoginTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateSizeOfStatusDropdown</span>
-                <span class="method-start">3821 ms</span>
+                <span class="method-name">profileNameStyleValidation</span>
+                <span class="method-start">3488 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=validateSizeOfStatusDropdown status=SUCCESS method=ManageOrdersTestCases.validateSi...)</span>
-                <span class="method-start">5922 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">6179 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validatePaymentModeIsBank</span>
-                <span class="method-start">8710 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=validatePaymentModeIsBank status=SUCCESS method=ManageOrdersTestCases.validatePayme...)</span>
-                <span class="method-start">11752 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">12173 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateOrderIdAndPaymentMode</span>
-                <span class="method-start">14631 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=validateOrderIdAndPaymentMode status=SUCCESS method=ManageOrdersTestCases.validateO...)</span>
-                <span class="method-start">18911 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">19349 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateDeletionOfProductOrder</span>
-                <span class="method-start">21652 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=validateDeletionOfProductOrder status=SUCCESS method=ManageOrdersTestCases.validate...)</span>
-                <span class="method-start">29010 ms</span>
+                <span class="method-name">afterMethod([TestResult name=profileNameStyleValidation status=SUCCESS method=LoginTestCases.profileNameStyleVal...)</span>
+                <span class="method-start">4243 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
